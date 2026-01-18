@@ -151,11 +151,11 @@ export function PatentShowcase() {
       {/* Performance Metrics */}
       <Card className="bg-slate-900/50 border-slate-800">
         <CardHeader>
-          <CardTitle className="text-2xl flex items-center gap-2">
+          <CardTitle className="text-2xl flex items-center gap-2 text-slate-200">
             <TrendingUp className="h-6 w-6 text-green-400" />
             Claimed Performance Improvements
           </CardTitle>
-          <CardDescription>
+          <CardDescription className="text-slate-400">
             Measurable, defensible improvements over prior art documented in the patent
           </CardDescription>
         </CardHeader>
@@ -194,11 +194,11 @@ export function PatentShowcase() {
       {/* Key Innovations */}
       <Card className="bg-slate-900/50 border-slate-800">
         <CardHeader>
-          <CardTitle className="text-2xl flex items-center gap-2">
+          <CardTitle className="text-2xl flex items-center gap-2 text-slate-200">
             <Award className="h-6 w-6 text-cyan-400" />
             Key Technical Innovations
           </CardTitle>
-          <CardDescription>
+          <CardDescription className="text-slate-400">
             Four core components that make this patent defensible and novel
           </CardDescription>
         </CardHeader>
@@ -245,7 +245,7 @@ export function PatentShowcase() {
         <TabsContent value="summary" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl">Invention Summary</CardTitle>
+              <CardTitle className="text-xl text-slate-200">Invention Summary</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm text-slate-300">
               <p>
@@ -289,8 +289,8 @@ export function PatentShowcase() {
         <TabsContent value="claims" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl">Patent Claims</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-xl text-slate-200">Patent Claims</CardTitle>
+              <CardDescription className="text-slate-400">
                 12 claims defining the scope of patent protection (5 key claims shown)
               </CardDescription>
             </CardHeader>
@@ -346,7 +346,7 @@ export function PatentShowcase() {
         <TabsContent value="background" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl">Background & Prior Art Limitations</CardTitle>
+              <CardTitle className="text-xl text-slate-200">Background & Prior Art Limitations</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>

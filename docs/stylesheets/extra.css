@@ -1,0 +1,159 @@
+/* Custom styling for SCBE-AetherMoore documentation */
+
+/* White/silver text with shadow for dark backgrounds */
+:root {
+  --text-white-trimmed: #ffffff;
+  --text-silver: #c0c0c0;
+  --text-shadow-white: 0 0 2px rgba(255, 255, 255, 0.8);
+  --text-shadow-silver: 0 0 3px rgba(192, 192, 192, 0.6);
+}
+
+/* Main headings - white with silver glow */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-white-trimmed) !important;
+  text-shadow: var(--text-shadow-white);
+  font-weight: 600;
+}
+
+/* Code blocks - silver text */
+code {
+  color: var(--text-silver) !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-shadow: var(--text-shadow-silver);
+}
+
+/* Pre-formatted code blocks */
+pre code {
+  text-shadow: none; /* Remove shadow in large code blocks for readability */
+}
+
+/* Admonition boxes - custom styling */
+.admonition {
+  border-left: 4px solid var(--text-silver);
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+.admonition-title {
+  color: var(--text-white-trimmed) !important;
+  text-shadow: var(--text-shadow-white);
+  font-weight: 600;
+}
+
+/* Tables - white headers, silver body */
+th {
+  color: var(--text-white-trimmed) !important;
+  text-shadow: var(--text-shadow-white);
+  background-color: rgba(100, 100, 255, 0.2);
+}
+
+td {
+  color: var(--text-silver);
+}
+
+/* Links - bright with glow */
+a {
+  color: #88ccff !important;
+  text-shadow: 0 0 2px rgba(136, 204, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #aaddff !important;
+  text-shadow: 0 0 4px rgba(170, 221, 255, 0.8);
+}
+
+/* Navigation - white text */
+.md-nav__link {
+  color: var(--text-white-trimmed) !important;
+}
+
+.md-nav__link--active {
+  color: #88ccff !important;
+  text-shadow: var(--text-shadow-white);
+}
+
+/* Search box - white text */
+.md-search__input {
+  color: var(--text-white-trimmed) !important;
+}
+
+/* Inline code in paragraphs */
+p code {
+  color: #ffcc88 !important;
+  text-shadow: 0 0 2px rgba(255, 204, 136, 0.5);
+}
+
+/* Blockquotes - silver with left border */
+blockquote {
+  border-left: 4px solid var(--text-silver);
+  color: var(--text-silver);
+  background-color: rgba(192, 192, 192, 0.05);
+  padding: 1em;
+  margin: 1em 0;
+}
+
+/* Lists - white bullets/numbers */
+li::marker {
+  color: var(--text-white-trimmed);
+}
+
+/* Details/summary (for collapsible sections) */
+summary {
+  color: var(--text-white-trimmed) !important;
+  text-shadow: var(--text-shadow-white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: var(--text-silver);
+  opacity: 0.3;
+}
+
+/* Special styling for Sacred Tongue tokens */
+.tongue-token {
+  font-family: 'Georgia', serif;
+  color: #ffcc88;
+  text-shadow: 0 0 3px rgba(255, 204, 136, 0.6);
+  font-style: italic;
+}
+
+/* Mermaid diagrams - adjust text color */
+.mermaid text {
+  fill: var(--text-white-trimmed) !important;
+}
+
+/* Math equations - white */
+.arithmatex {
+  color: var(--text-white-trimmed) !important;
+}
+
+/* Footnotes - silver */
+.footnote {
+  color: var(--text-silver);
+  font-size: 0.9em;
+}
+
+/* Custom class for emphasis */
+.emphasis-white {
+  color: var(--text-white-trimmed);
+  text-shadow: var(--text-shadow-white);
+  font-weight: 600;
+}
+
+/* Custom class for sacred tongue sections */
+.sacred-tongue-section {
+  background: linear-gradient(135deg, rgba(100, 100, 255, 0.1), rgba(192, 192, 192, 0.1));
+  border-left: 4px solid #88ccff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+.sacred-tongue-section h3 {
+  color: #88ccff !important;
+  text-shadow: 0 0 4px rgba(136, 204, 255, 0.6);
+}

@@ -356,7 +356,7 @@ export function AcademicValidation() {
         <TabsContent value="chaos" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Orbit className="h-6 w-6 text-purple-400" />
                 Chaos-Based Cryptography & Logistic Map Encryption
               </CardTitle>
@@ -388,7 +388,7 @@ export function AcademicValidation() {
         <TabsContent value="context" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Shield className="h-6 w-6 text-cyan-400" />
                 Context-Aware Authentication & Privacy-Preserving Security
               </CardTitle>
@@ -420,7 +420,7 @@ export function AcademicValidation() {
         <TabsContent value="hopfield" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Brain className="h-6 w-6 text-green-400" />
                 Hopfield Neural Networks for Authentication
               </CardTitle>
@@ -453,7 +453,7 @@ export function AcademicValidation() {
         <TabsContent value="pqc" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Lock className="h-6 w-6 text-blue-400" />
                 Post-Quantum Cryptography (ML-KEM & ML-DSA)
               </CardTitle>
@@ -508,7 +508,7 @@ export function AcademicValidation() {
         <TabsContent value="noise" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <AlertTriangle className="h-6 w-6 text-orange-400" />
                 Fail-to-Noise Cryptography & Honey Encryption
               </CardTitle>
@@ -568,7 +568,7 @@ export function AcademicValidation() {
         <TabsContent value="swarm" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Network className="h-6 w-6 text-cyan-400" />
                 Swarm Consensus & Byzantine Fault Tolerance
               </CardTitle>
@@ -625,7 +625,7 @@ export function AcademicValidation() {
         <TabsContent value="behavioral" className="space-y-6 mt-6">
           <Card className="bg-slate-900/50 border-slate-800">
             <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
+              <CardTitle className="text-xl flex items-center gap-2 text-slate-100">
                 <Cpu className="h-6 w-6 text-purple-400" />
                 Behavioral Biometrics & Continuous Authentication
               </CardTitle>

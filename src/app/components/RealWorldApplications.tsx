@@ -72,7 +72,7 @@ export function RealWorldApplications() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Code2 className="h-8 w-8 text-cyan-400" />
-                <CardTitle className="text-2xl">Multi-Agent AI Coordination</CardTitle>
+                <CardTitle className="text-2xl text-slate-100">Multi-Agent AI Coordination</CardTitle>
               </div>
               <CardDescription>
                 Secure communication and governance for AI swarms (LLMs, coding assistants, autonomous systems)
@@ -192,7 +192,7 @@ export function RealWorldApplications() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Shield className="h-8 w-8 text-blue-400" />
-                <CardTitle className="text-2xl">Adaptive Cybersecurity & Zero-Trust Enhancement</CardTitle>
+                <CardTitle className="text-2xl text-slate-100">Adaptive Cybersecurity & Zero-Trust Enhancement</CardTitle>
               </div>
               <CardDescription>
                 Post-quantum authentication with behavioral intent analysis
@@ -300,7 +300,7 @@ export function RealWorldApplications() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Cpu className="h-8 w-8 text-green-400" />
-                <CardTitle className="text-2xl">IoT & Edge Network Governance</CardTitle>
+                <CardTitle className="text-2xl text-slate-100">IoT & Edge Network Governance</CardTitle>
               </div>
               <CardDescription>
                 Distributed defense for autonomous systems without central controllers
@@ -403,7 +403,7 @@ export function RealWorldApplications() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Rocket className="h-8 w-8 text-orange-400" />
-                <CardTitle className="text-2xl">Interplanetary Communication</CardTitle>
+                <CardTitle className="text-2xl text-slate-100">Interplanetary Communication</CardTitle>
               </div>
               <CardDescription>
                 Physics-resistant cryptography for Mars, deep space, and beyond
@@ -466,7 +466,7 @@ export function RealWorldApplications() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Globe className="h-8 w-8 text-purple-400" />
-                <CardTitle className="text-2xl">Scientific & Research Applications</CardTitle>
+                <CardTitle className="text-2xl text-slate-100">Scientific & Research Applications</CardTitle>
               </div>
               <CardDescription>
                 Dual-purpose output: Security system + behavioral analysis tool

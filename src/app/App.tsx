@@ -9,10 +9,11 @@ import { ChemistryAgent } from './components/ChemistryAgent';
 import { RealWorldApplications } from './components/RealWorldApplications';
 import { AcademicValidation } from './components/AcademicValidation';
 import { PatentShowcase } from './components/PatentShowcase';
-import { Atom, Brain, Radio, Orbit, FlaskConical, Lightbulb, BookOpen, Scale } from 'lucide-react';
+import { SystemTest } from './components/SystemTest';
+import { Atom, Brain, Radio, Orbit, FlaskConical, Lightbulb, BookOpen, Scale, ShieldCheck } from 'lucide-react';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('patent');
+  const [activeTab, setActiveTab] = useState('validation');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
@@ -42,6 +43,9 @@ export default function App() {
             <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
               SpiralRing-64
             </span>
+            <span className="px-3 py-1 rounded-full bg-green-500/10 text-green-400 border border-green-500/20">
+              System Validated
+            </span>
           </div>
         </div>
       </div>
@@ -49,7 +53,11 @@ export default function App() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 lg:grid-cols-8 bg-slate-900/50 border border-slate-800">
+          <TabsList className="grid w-full grid-cols-4 lg:grid-cols-9 bg-slate-900/50 border border-slate-800">
+            <TabsTrigger value="validation" className="data-[state=active]:bg-green-500/20 data-[state=active]:text-green-400">
+              <ShieldCheck className="h-4 w-4 mr-2" />
+              Test
+            </TabsTrigger>
             <TabsTrigger value="patent" className="data-[state=active]:bg-amber-500/20 data-[state=active]:text-amber-400">
               <Scale className="h-4 w-4 mr-2" />
               Patent
@@ -83,6 +91,10 @@ export default function App() {
               Mars
             </TabsTrigger>
           </TabsList>
+
+          <TabsContent value="validation" className="mt-6">
+            <SystemTest />
+          </TabsContent>
 
           <TabsContent value="applications" className="mt-6">
             <RealWorldApplications />

@@ -163,11 +163,11 @@ export function PatentShowcase() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {PERFORMANCE_METRICS.map((metric, idx) => (
               <div key={idx} className="bg-slate-950/50 border border-slate-700 rounded-lg p-4">
-                <div className="text-3xl font-bold mb-1" style={{ color: metric.color.replace('text-', '') }}>
+                <div className={`text-3xl font-bold mb-1 ${metric.color}`}>
                   {metric.value}
                 </div>
-                <div className="text-sm text-slate-300 font-semibold mb-1">{metric.label}</div>
-                <div className="text-xs text-slate-500">{metric.baseline}</div>
+                <div className="text-sm text-slate-200 font-semibold mb-1">{metric.label}</div>
+                <div className="text-xs text-slate-400">{metric.baseline}</div>
               </div>
             ))}
           </div>

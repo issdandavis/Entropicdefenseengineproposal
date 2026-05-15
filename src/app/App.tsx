@@ -10,7 +10,8 @@ import { RealWorldApplications } from './components/RealWorldApplications';
 import { AcademicValidation } from './components/AcademicValidation';
 import { PatentShowcase } from './components/PatentShowcase';
 import { SystemTest } from './components/SystemTest';
-import { Atom, Brain, Radio, Orbit, FlaskConical, Lightbulb, BookOpen, Scale, ShieldCheck } from 'lucide-react';
+import { NeutrinoPermissionSphere } from './components/NeutrinoPermissionSphere';
+import { Atom, Brain, Radio, Orbit, FlaskConical, Lightbulb, BookOpen, Scale, ShieldCheck, RadioTower } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('validation');
@@ -53,7 +54,7 @@ export default function App() {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 lg:grid-cols-9 bg-slate-900/50 border border-slate-800">
+          <TabsList className="grid w-full grid-cols-4 lg:grid-cols-10 bg-slate-900/50 border border-slate-800">
             <TabsTrigger value="validation" className="data-[state=active]:bg-green-500/20 data-[state=active]:text-green-400">
               <ShieldCheck className="h-4 w-4 mr-2" />
               Test
@@ -90,6 +91,10 @@ export default function App() {
               <Radio className="h-4 w-4 mr-2" />
               Mars
             </TabsTrigger>
+            <TabsTrigger value="neutrino" className="data-[state=active]:bg-cyan-500/20 data-[state=active]:text-cyan-400">
+              <RadioTower className="h-4 w-4 mr-2" />
+              Nu
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="validation" className="mt-6">
@@ -122,6 +127,10 @@ export default function App() {
 
           <TabsContent value="mars" className="mt-6">
             <MarsScenario />
+          </TabsContent>
+
+          <TabsContent value="neutrino" className="mt-6">
+            <NeutrinoPermissionSphere />
           </TabsContent>
 
           <TabsContent value="patent" className="mt-6">
